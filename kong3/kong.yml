@@ -1,0 +1,13 @@
+_format_version: "2.1"
+
+services:
+  - name: github-service
+    url: https://github.com
+    routes:
+      - name: github-route
+        paths:
+          - /github
+    plugins:
+      - name: go-wait
+        config:
+          waittime: 5
